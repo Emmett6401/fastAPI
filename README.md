@@ -1,5 +1,3 @@
-# README.md
-
 # Object Detection API
 
 This project is a FastAPI application that allows users to upload images and perform object detection using the YOLOv8 model. The API processes the uploaded images and returns the detected objects along with their confidence scores.
@@ -9,6 +7,7 @@ This project is a FastAPI application that allows users to upload images and per
 - Upload images for object detection
 - Detect objects in images using YOLOv8
 - Return structured JSON responses with detection results
+- flask를 이용하는 것보다 비동기처리로 wait 없이 처리가 가능
 
 ## Project Structure
 
