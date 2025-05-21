@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YOLO Detection Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>YOLO Detection Test</h1>
+    <div>
+        <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+        <button onclick="uploadImage()">Detect</button>
+    </div>
+    <div style="display: flex;">
+        <div>
+            <h2>Original Image</h2>
+            <img id="originalPreview" src="#" alt="Original Image" style="max-width: 500px; max-height: 500px; display:none;">
+        </div>
+        <div>
+            <h2>Detected Image</h2>
+            <canvas id="detectedCanvas" style="max-width: 500px; max-height: 500px; display:none;"></canvas>
+        </div>
+    </div>
+    <pre id="result"></pre>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

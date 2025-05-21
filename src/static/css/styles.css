@@ -1,0 +1,6 @@
+#preview {
+    max-width: 500px; /* 최대 너비 설정 */
+    max-height: 500px; /* 최대 높이 설정 */
+    width: auto;       /* 너비 자동 조정 */
+    height: auto;      /* 높이 자동 조정 */
+}
