@@ -58,12 +58,53 @@ object-detection-api
 
 1. Start the FastAPI server:
    ```
-   uvicorn src.main:app --reload
+   run_server.bat
+   ```
+   여기에는 다음과 같은 코드가 들어 있다.
+   ```
+   REM filepath: d:\DEV_23\restAPI2\run_server.bat
+   @echo off
+   set PYTHONPATH=%cd%\src
+   uvicorn main:app --reload --host 0.0.0.0 --port 8080
+   ```
+2. 실행화면 
+## 테스트 화면   웹 브라우저에서    
+   ```
+   http://localhost:8080/static/index.html
+   ```
+   로 접속 하면    
+   ![image](https://github.com/user-attachments/assets/9a767fc1-a1ef-495b-a762-a4db19a88d36)
+
+3. API 사용 설명서는 `http://127.0.0.1:8080/docs`.
+
+4. curl과 python code test
+   ```
+   cd tests
+   cmd_test.bat
+   ```
+   내부에는  다음과 같은 코드가 들어 있다.
+   ```
+   echo off
+   echo.
+   echo ====================== curl test 결과 출력 ======================
+   curl -X POST -F "file=@너의 이미지 파일" http://localhost:8080/upload
+   echo.
+   echo ====================== curl test finish   ======================
+   echo.
+   echo.
+   echo ====================== test_api.py 실행   ======================
+   echo.
+   pytest test_api.py -vv --capture=no
+   echo.
+   echo ====================== test_api.py finish ======================
    ```
 
-2. Access the API documentation at `http://127.0.0.1:8000/docs`.
+## 테스트 화면 콘솔에서 
+![image](https://github.com/user-attachments/assets/3e64c4cc-f2b2-4d9c-8994-0f292a106347)
+![image](https://github.com/user-attachments/assets/3b4612e1-04e5-4c60-836c-d77b2cddce8e)
 
-3. Use the `/upload` endpoint to upload images for object detection.
+
+   
 
 ## Contributing
 
