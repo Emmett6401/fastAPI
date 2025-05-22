@@ -72,7 +72,7 @@ object-detection-api
    http://localhost:8080/static/index.html
    ```
    로 접속 하면    
-   ![image](https://github.com/user-attachments/assets/9a767fc1-a1ef-495b-a762-a4db19a88d36)
+  ![image](https://github.com/user-attachments/assets/b876bc9b-94bd-47b5-a768-7b415a59178e)
 
 3. API 사용 설명서는 `http://127.0.0.1:8080/docs`.
 
